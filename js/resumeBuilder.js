@@ -5,12 +5,12 @@ var bio = {
     "mobile" : "512-484-5243",
     "email" : "jessicarocha3786@gmail.com",
     "github" : "jessica_rocket",
-    "twitter" : "jess_rocha18",
+    "linkedin" : "linkedin.com/in/j-rocha/",
     "location" : "San Antonio, Texas"
   },
   "welcomeMessage" : "The only way to do great work is to love what you do.",
   "skills" : [
-    "JavaScript", "HTML", "CSS", "Python"],
+    "JavaScript", "HTML", "CSS", "jQuery", "Bootstrap", "WordPress"],
   "biopic" : "images/me.jpg"
 };
 
@@ -26,12 +26,12 @@ bio.display = function() {
 
   var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
   var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-  var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+  var formattedLinkedIn = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
   var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
   var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-  $('#topContacts').append(formattedMobile, formattedEmail, formattedTwitter, formattedGithub, formattedLocation);
+  $('#topContacts').append(formattedMobile, formattedEmail, formattedLinkedIn, formattedGithub, formattedLocation);
 
-  $("#lets-connect").append(formattedMobile, formattedEmail, formattedTwitter, formattedGithub, formattedLocation);
+  $("#lets-connect").append(formattedMobile, formattedEmail, formattedLinkedIn, formattedGithub, formattedLocation);
 
   if(bio.skills.length > 0) {
     $("#header").append(HTMLskillsStart);
@@ -115,15 +115,15 @@ var work = {
       "employer": "New York Life Insurance",
       "title": "Senior Representative",
       "location" : "San Antonio, Texas",
-      "dates" : "October 2012 - May 2017",
-      "description":  "Provided administrative support to the Managing Partner; assisting with preparing reports, PowerPoint presentations, coordinating meetings, and screening phone calls and emails. Supported 10 senior level managers with recruiting new agents and compiling new hire paperwork for Home Office, acting as communications liaison to ensure all paperwork was submitted correctly and efficiently. Managed bank balancing and agent tracking spreadsheets, updated and distributed various monthly reports, and maintained file system for employee personnel records. Organized and led multiple work events, including company award ceremonies, agent trainings, and outside office meetings.Trained all new agents in our life insurance underwriting requirements and e-application process in weekly classroom environments that involved live demonstrations, small group meetings and one-on-one sessions."
+      "dates" : "October 2012 - June 2017",
+      "description":  "Supported 10 senior level managers with recruiting new agents and compiling new hire paperwork for Home Office, acting as communications liaison between new agents and our Home Office. Trained all new agents in our life insurance underwriting requirements and e-application process in weekly classroom environments that involved live demonstrations, small group meetings and one-on-one sessions."
   },
   {
       "employer": "Rocket Tier Mobile Development",
       "title": "Operatons Manager",
       "location" : "San Antonio, Texas",
       "dates" : "August 2011- September 2012",
-      "description":  "Oversaw the planning, execution, and finalization of 15 mobile app projects. Utilized and spearheaded the company’s social media strategy across all platforms to establish our company’s brand. Contributed towards establishing Rocket Tier as a legal business entity within the state of Texas by filing all official paperwork. Balanced company’s financial transactions and handled all accounting aspects. Filed quarterly and yearly taxes for the entity by complying with State Tax Regulations."
+      "description":  "Involved in testing applications on different mobile platforms such as iOS and Android devices. Oversaw the planning, execution, and finalization of 15 mobile app projects. Performed initial client assessment and analysis to begin development process. Obtained documents, clearances, certificates, and approvals from local, state, and federal agencies. Balanced company’s financial transactions and handled all accounting aspects."
   }
  ]
 };
@@ -149,16 +149,16 @@ work.display();
 var projects = {
   "projects" : [
     {
-      "title": "Memory Game",
+      "title": "Classic Arcade Game Clone",
       "dates": "2017",
-      "description":  "The game starts with 16 cards flipped face down. On the other side of the card are images of animals. The player chooses two card by clicking on them. The goal of the game is to match all the cards on the game board. The game is timed and also tracks the number of moves it takes you to complete the game. We also have a star rating in the game that is determined by how many moves the players takes. You start with 3 stars, once the player goes over 10 moves, you lose a star. When the player goes over 14 moves, you lose another star. Once the game is over, the pop up shows how much time you took to complete the game, shows how many moves you took, and shows your final star rating.",
-      "images" : ["images/memory1.png", "images/memory2.png"]
+      "description":  "Created a version of “Frogger” practicing Object-Oriented JavaScript. Use the arrow keys on keyboard to move the player. Key objective of the game is that the player must avoid enemies and reach the water. If you collide with an enemy, the game will be restarted; if you reach the water, you win!",
+      "images" : ["images/clone1.png", "images/clone2.png"]
   },
   {
-    "title": "Portfolio Site Project",
+    "title": "Austin Neighborhood Map",
     "dates": "2017",
-    "description":  "For this project, I was given a design mockup as a PDF file that I replicated into a website using HTML and CSS. I used Bootstrap to help framework the design and also utilized it to make the website and images responsive on all display sizes. The website also displays link so each of the portfolio projects.  ",
-    "images" : ["images/portfolio1.png", "images/portfolio2.png"]
+    "description":  "Integrated Google Maps with Foursquare API to showcase information about popular Austin Restaurants.",
+    "images" : ["images/neighborhood1.png", "images/neighborhood2.png"]
   }
  ]
 };
